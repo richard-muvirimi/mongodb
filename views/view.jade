@@ -1,0 +1,20 @@
+extends layout
+
+block content
+  h1= title
+
+  div.d-grid.gap-2.d-md-flex.justify-content-md-end
+    a.btn.btn-outline-info(href="/") Users
+  
+  div
+    div.mb-3
+      label.form-label(for="txtFirstName") First Name
+      input.form-control#txtFirstName(type="text", placeholder="First Name", disabled="disabled", value=user.firstName,)  
+
+    div.mb-3
+      label.form-label(for="txtFirstName") Last Name
+      input.form-control#txtLastName(type="text", placeholder="Last Name", disabled="disabled", value=user.lastName)
+
+    div.mb-3
+      label.form-label(for="txtEmail") Email Address
+      input.form-control#txtEmail(type="email", placeholder="Email Address", disabled="disabled", value=user.email)

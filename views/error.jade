@@ -1,0 +1,9 @@
+extends layout
+
+block content
+  h1= message
+  h2= error.status
+  pre #{error.stack}
+
+  div.d-grid.gap-2.d-md-flex.justify-content-md-end
+    a.btn.btn-outline-info(href="/") Users
